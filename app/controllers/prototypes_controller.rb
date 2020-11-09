@@ -18,7 +18,7 @@ class PrototypesController < ApplicationController
       redirect_to root_path
     else
       @prototypes = Prototype.includes(:user)
-      render :new
+      render :edit
     end
   end
 
